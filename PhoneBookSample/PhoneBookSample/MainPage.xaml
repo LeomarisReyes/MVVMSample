@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:PhoneBookSample" 
+             x:Class="PhoneBookSample.MainPage">
+    
+    <ContentPage.BindingContext>
+        <local:ViewModels.ContactInformationViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout BackgroundColor = "{Binding BGColor}" Padding="0,50,0,0">
+            <Label Text="Contact information" FontSize="27" TextColor="White" Margin="20,0,0,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+            <Image   Source="Contact" WidthRequest="190" HeightRequest="120" />
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="Silver"/>
+            <Button Text="Change aparrience" Command="{Binding ChangeAppearanceCommand}" BackgroundColor="{Binding BTNColor}" WidthRequest="72" BorderRadius="16" TextColor="White" Margin="10"/>
+             
+        <ListView ItemsSource = "{Binding Contacts}" 
+                  BackgroundColor="{Binding BGColor}"
+                  HasUnevenRows = "true"
+                  Footer        = "">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell> 
+                         <StackLayout>
+                            <StackLayout Orientation="Vertical">  
+                                 <StackLayout Orientation="Horizontal"   Margin="20,10,0,0">  
+                                    <Label   Text  ="{Binding Name}"    FontSize="15"     BackgroundColor="{Binding SelectedColor}" />
+                                    <Label   Text  ="{Binding LastName}"    FontSize="15" TextColor="{Binding SelectedColor}"/>
+                                 </StackLayout>
+                                 <StackLayout Orientation="Horizontal"  Margin="20,10,0,0"> 
+                                   <Label   Text  ="{Binding Gender}"  FontSize="15"  /> 
+                                   <Label   Text  ="{Binding PhoneNumber}"  FontSize="15"/>
+                                 </StackLayout>
+                                </StackLayout> 
+                        </StackLayout> 
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+</ContentPage>

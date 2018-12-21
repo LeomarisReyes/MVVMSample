@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{A25D90DA-B409-44B2-8748-1F45978A5793}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PhoneBookSample/MainPage.xaml">
+    <Files>
+      <File FileName="PhoneBookSample/MainPage.xaml" Line="16" Column="13" />
+      <File FileName="PhoneBookSample/ViewModels/ContactInformationViewModel.cs" Line="13" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PhoneBookSample.Android PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/leomaris/Projects/PhoneBookSample/PhoneBookSample/ViewModels/ContactInformationViewModel.cs" relfile="PhoneBookSample/ViewModels/ContactInformationViewModel.cs" line="48" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PhoneBookSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.178DC366-EC0B-4935-A028-E241134F55D7" />
+  <MultiItemStartupConfigurations />
+</Properties>
